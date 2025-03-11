@@ -4,7 +4,7 @@
 import requests
 
 # URL to fetch pull requests from the GitHub API
-url = f'https://api.github.com/repos/kubernetes/kubernetes/pulls'
+url = f'https://api.github.com/repos/kubernetes/kubernetes/pulls?state=all'
 
 # Make a GET request to fetch pull requests data from the GitHub API
 response = requests.get(url)  # Add headers=headers inside get() for authentication
